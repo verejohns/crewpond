@@ -1,0 +1,192 @@
+[
+    {
+        "helpTopic": "The Dashboard",
+        "topicQA": [
+            {
+                "question": "How do I navigate the dashboard?",
+                "answerLink": "https://youtu.be/RwvVahCHnhA"
+            },
+            {
+                "question": "How do I view my job posts?",
+                "answerLink": "https://youtu.be/_StCO0AiTGA"
+            },
+            {
+                "question": "How do I view my contracts?",
+                "answerLink": "https://youtu.be/48jbZ7fnKpE"
+            }
+        ]
+    },
+    {
+        "helpTopic": "Creating a Job",
+        "topicQA": [
+            {
+                "question": "How do I create a job post?",
+                "answerLink": "https://youtu.be/O_Baq9f5V2U"
+            },
+            {
+                "question": "How do I add a schedule to a new job?",
+                "answerLink": "https://youtu.be/OVxoVYV5eTY"
+            },
+            {
+                "question": "How do I make a job private?",
+                "answerLink": "https://youtu.be/-2mbXTMA4bE"
+            },
+            {
+                "question": "How do I invite a jobber to my job posting?",
+                "answerLink": "https://youtu.be/lQzF0390A64"
+            },
+            {
+                "question": "How do I update a schedule?",
+                "answerLink": "https://youtu.be/5-cBKyxNKX8"
+            },
+            {
+                "question": "How do I assign / unassign a jobber to a schedule?",
+                "answerLink": "https://youtu.be/2KqdcF2ZCeE"
+            }
+        ]
+    },
+    {
+        "helpTopic": "Searching for Jobs",
+        "topicQA": [
+            {
+                "question": "How do I view what jobs I have been invited to?",
+                "answerLink": "https://youtu.be/GO50pH2oDW8"
+            },
+            {
+                "question": "How do I view offers that I have made on job posts?",
+                "answerLink": "https://youtu.be/kjHfCCSHklU"
+            },
+            {
+                "question": "How do I view my job posts?",
+                "answerLink": "https://youtu.be/_StCO0AiTGA"
+            }
+        ]
+    },
+    {
+        "helpTopic": "Job Offers",
+        "topicQA": [
+            {
+                "question": "How do I view what jobs I have been invited to?",
+                "answerLink": "https://youtu.be/GO50pH2oDW8"
+            },
+            {
+                "question": "How do I view offers that I have made on job posts?",
+                "answerLink": "https://youtu.be/kjHfCCSHklU"
+            },
+            {
+                "question": "How do I make an offer on a job?",
+                "answerLink": "https://youtu.be/-O0nlydgd6Y"
+            },
+            {
+                "question": "How do I accept a jobber’s offer?",
+                "answerLink": "https://youtu.be/9CIkHLLhkFs"
+            },
+            {
+                "question": "How do I create a job group chat?",
+                "answerLink": "https://youtu.be/m1uZjvOO7E0"
+            }
+        ]
+    },
+    {
+        "helpTopic": "Job Contracts",
+        "topicQA": [
+            {
+                "question": "How do I view my contracts?",
+                "answerLink": "https://youtu.be/48jbZ7fnKpE"
+            },
+            {
+                "question": "How do I accept a jobber’s offer?",
+                "answerLink": "https://youtu.be/9CIkHLLhkFs"
+            },
+            {
+                "question": "How do I create a job group chat?",
+                "answerLink": "https://youtu.be/m1uZjvOO7E0"
+            }
+        ]
+    },
+    {
+        "helpTopic": "Job Invites",
+        "topicQA": [
+            {
+                "question": "How do I view what jobs I have been invited to?",
+                "answerLink": "https://youtu.be/GO50pH2oDW8"
+            },
+            {
+                "question": "How do I view offers that I have made on job posts?",
+                "answerLink": "https://youtu.be/kjHfCCSHklU"
+            },
+            {
+                "question": "How do I view my job posts?",
+                "answerLink": "https://youtu.be/_StCO0AiTGA"
+            }
+            
+        ]
+    },
+    {
+        "helpTopic": "My Calendar",
+        "topicQA": [
+            {
+                "question": "How do I navigate My Calendar?",
+                "answerLink": "https://youtu.be/SWdIQ14rr6o"
+            },
+            {
+                "question": "How do I invite a jobber to my job posting in My Calendar? ",
+                "answerLink": "https://youtu.be/_71cY4JloQ4"
+            },
+            {
+                "question": "How do I add a schedule to my job in My Calendar?",
+                "answerLink": "https://youtu.be/_71cY4JloQ4"
+            },
+            {
+                "question": "How do I edit my job posting in My Calendar?",
+                "answerLink": "https://youtu.be/itU-4STRjIA"
+            },
+            {
+                "question": "How do I get my ICS Feed URL so I can subscribe to my personal device’s calendar app?",
+                "answerLink": "https://youtu.be/L2EbN8Titgs"
+            },
+            {
+                "question": "How do I direct schedule my full-time workers?",
+                "answerLink": "https://youtu.be/sFBRoT1IuCo"
+            }
+        ]
+    },
+    {
+        "helpTopic": "Chats",
+        "topicQA": [
+            {
+                "question": "How do I create a job group chat?",
+                "answerLink": "https://youtu.be/m1uZjvOO7E0"
+            }
+        ]
+    },
+    {
+        "helpTopic": "Invoices",
+        "topicQA": [
+            {
+                "question": "How do I create an invoice or timesheet?",
+                "answerLink": "https://youtu.be/pXbqvrsel4Y"
+            }
+        ]
+    },
+    {
+        "helpTopic": "My Profile",
+        "topicQA": [
+            {
+                "question": "How do I edit my profile?",
+                "answerLink": "https://youtu.be/EEk9VAy8uyw"
+            }
+        ]
+    },
+    {
+        "helpTopic": "Payment Details",
+        "topicQA": [
+            {
+                "question": "How do I add my payment details / receive payments?",
+                "answerLink": "https://youtu.be/MFHuPlGywjo"
+            }
+        ]
+    }
+]
+
+

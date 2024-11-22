@@ -1,0 +1,33 @@
+.modal-dialog {
+  @media (max-width: 575px)  {
+      margin: .5rem .75rem;
+  }
+
+  .modal-dialog-header {
+      display: flex;
+      justify-content: flex-end;
+
+      img {
+          position: absolute;
+          background-color: $white;
+          cursor: pointer;
+          z-index: 1000;
+          width: 25px;
+          height: 25px;
+          border-radius: 50%;
+          padding: 7px;
+          margin-left: 10px;
+          margin-top: -10px;
+          box-shadow: 0 5px 10px #aaaaaa;
+      }
+      form textarea {
+          border-color: $primary;
+          box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          -o-box-shadow: none;
+          resize: none;
+          overflow: hidden;
+      }
+  }
+}

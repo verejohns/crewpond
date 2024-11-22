@@ -1,0 +1,62 @@
+head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+    title=title
+    link(href='/static/css/app.css' type='text/css' rel='stylesheet')
+    link(href='/static/css/toastr.min.css' type='text/css' rel='stylesheet')
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    script(src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js")
+    
+    script(src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js")
+    script.
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBBGBw-XK7gElqL8h5gFFHgf3auBtsChrw",
+            authDomain: "crew-pond-92848.firebaseapp.com",
+            databaseURL: "https://crew-pond-92848.firebaseio.com",
+            projectId: "crew-pond-92848",
+            storageBucket: "crew-pond-92848.appspot.com",
+            messagingSenderId: "880401615741",
+            appId: "1:880401615741:web:39775dc33157130e",
+            measurementId: "G-6YH4D9DPD1"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        // Facebook Pixel Code
+        !function(f,b,e,v,n,t,s){
+            if(f.fbq)return;
+            n=f.fbq=function(){
+                n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)
+            };
+            if(!f._fbq)
+                f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)
+        }(window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
+
+        fbq('init', '472717906638009');
+        fbq('track', 'PageView');
+    noscript
+        img(height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=472717906638009&ev=PageView&noscript=1")
+    <!--End Facebook Pixel Code -->
+    script.
+        window.fbAsyncInit = function () {
+            FB.init({
+                appId: '1608694665930702',
+                cookie: true,
+                xfbml: true,
+                version: 'v3.3'
+            });
+
+            FB.AppEvents.logPageView();
+        };
+
+        (function (d, s, id) {
+            let js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) {
+                return;
+            }
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "https://connect.facebook.net/en_US/sdk.js";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));

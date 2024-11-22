@@ -1,0 +1,167 @@
+.navbar {
+  background-image: linear-gradient(to bottom, #248bb4 0%, #1f7da7 35%, #105580 100%);
+  height: 66px;
+  justify-content: left !important;
+
+  .navbar-menu, .navbar-title {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 992px) {
+      display: none;
+    }
+    img {
+      width: auto;
+      height: 60%;
+      cursor: pointer;
+    }
+  }
+
+  .navbar-title {
+    color: white;
+    font-size: 20px;
+    margin-left: 10px;
+  }
+
+  .navbar-brand {
+    height: 100%;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+    @media screen and (max-width: 1070px) {
+      margin-right: 0px;
+    }
+    img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  .nav {
+    flex-direction: row;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+
+    .nav-item {
+      position: relative;
+      margin: 0 15px;
+      @media screen and (max-width: 1248px) {
+        margin: 0 8px;
+      }
+
+      @media screen and (max-width: 1049px) {
+        margin: 0 2px;
+      }
+      .badge-count {
+        margin-left: auto;
+        margin-top: -15px;
+      }
+
+      &:hover {
+        .navbar-dropdown {
+          display: block;
+        }
+      }
+
+      a {
+        display: block;
+        color: $white;
+        letter-spacing: 1px;
+        padding: 6px 30px 9px 30px;
+        border: 1px solid $white;
+        border-radius: 20px;
+      }
+      a.active {
+        background: white;
+        color: $primary;
+      }
+
+      .navbar-dropdown {
+        position: absolute;
+        display: none;
+        top: 100%;
+        left: -40px;
+        right: -40px;
+        background-image: linear-gradient(to bottom, #145e89 0%, #000000 100%);
+        padding: 0 20px 15px 20px;
+        border-radius: 0 0 20px 20px;
+        box-shadow: 0 12px 15px rgba(16, 84, 127, 0.3);
+        -webkit-box-shadow: 0 12px 15px rgba(16, 84, 127, 0.3);
+        -moz-box-shadow: 0 12px 15px rgba(16, 84, 127, 0.3);
+        -o-box-shadow: 0 12px 15px rgba(16, 84, 127, 0.3);
+
+        .nav-item {
+          margin: 15px 0;
+
+          a {
+            padding: 0;
+            border: none;
+            border-radius: 0;
+          }
+          a.active, a:hover {
+            background: transparent;
+            color: $white;
+          }
+        }
+      }
+    }
+  }
+
+  .notification-nav {
+    margin-left: auto;
+    margin-right: 15px;
+
+    .help-button {
+      background-color: transparent;
+      border: none;
+      color: #fff;
+      margin-left: 15px;
+      padding: 0;
+    }
+
+    img {
+      width: 32px;
+      cursor: pointer;
+    }
+
+    .badge-count {
+      position: absolute;
+      margin-left: -8px;
+      margin-top: -36px;
+    }
+  }
+  .user-nav {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    cursor: pointer;
+    @media screen and (max-width: 360px) {
+      display: none;
+    }
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      margin-right: 10px;
+      object-fit: cover; 
+    }
+
+    .user-name {
+      color: white;
+      font-size: 15px;
+      @media screen and (max-width: 1312px) {
+        display: none;
+      }
+    }
+  }
+}
+.navbar.navbar-fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+
+}

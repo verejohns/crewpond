@@ -1,0 +1,101 @@
+.breadcrumb {
+  position: relative;
+  background-color: $breadcrumb-bg;
+  height: 150px;
+}
+
+.breadcrumb .navbar-nav {
+  flex: 1;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.plan-card.card {
+  border-radius: 0.25rem;
+  border: 0;
+  background-color: $starter-plan;
+  margin-bottom: 0rem;
+}
+
+.plan-card .plan-name {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.card-body .plan-messages {
+  text-align: right;
+  color: #ffffff;
+}
+
+.plan-card .plan-keywords {
+  text-align: right;
+  color: #ffffff;
+}
+
+.plan-number {
+  font-weight: bold;
+  display: inline-block; 
+}
+
+.plan-detail {
+  font-size: 15px;
+  font-weight: normal;
+  font-style: normal;
+  display: flex;
+  flex: 1;
+  justify-content: end;
+}
+
+.profile-dropdown {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.img-avatar {
+  width: 35px;
+  height: 35px;
+  background-color: $cyan;
+  border-radius: 50%;
+  float: right;
+}
+
+.profile-view {
+  flex: 1;
+}
+
+.profile-view .profile-menu {
+  float: right;
+  .avatar-view{
+    cursor: pointer;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: $gray-600;
+    .img-avatar {
+      display: inline-block;
+      margin-right: 5px;
+    }
+  }
+
+}
+
+.view-plan-detail {
+  margin-left: 10px;
+  text-align: center;
+  font-size: 15px;
+  width: 80px;
+  height: auto;
+}
+
+.route-name {
+  font-size: 20px;
+  font-weight: bold;
+}

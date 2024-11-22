@@ -1,0 +1,27 @@
+.security-content{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+
+    form {
+        width: 60%;
+    }
+
+    @media screen and (max-width: 1200px) {
+        width: 60%;
+        form {
+            width: 80%;
+        }
+    }
+    
+    @media screen and (max-width: 768px) {
+        width: 90%;
+        form {
+            width: 80%;
+        }
+    }
+}

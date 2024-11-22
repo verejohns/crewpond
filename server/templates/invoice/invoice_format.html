@@ -1,0 +1,350 @@
+<html>
+  <head>
+    <meta charset="utf8">
+    <style>
+      html, body {
+        margin: 0;
+        padding: 0;
+        font-family: serif;
+        font-weight: 500;
+        font-size: 7px;
+        background: rgb(241,241,241);
+        -webkit-print-color-adjust: exact;
+        box-sizing: border-box;
+      }
+      .page {
+        position: relative;
+        height: 176mm;
+        width: 250mm;
+        display: block;
+        background: white;
+        page-break-after: auto;
+      }
+      @media print {
+        body {
+          background: white;
+        }
+        .page {
+          margin: 0;
+          height: 100%;
+          width: 100%;
+        }
+      }
+      .title {
+        padding-top: 10mm;
+        padding-left: 10mm;
+        color: #10547f;
+        font-size: 20px;
+        font-weight: bold;
+      }
+      .content {
+        width: 100%;
+        height: 100%;
+      }
+      .invoice-from {
+        display: flex;
+        padding: 10px 10mm;
+      }
+      .invoice-to {
+        display: flex;
+        padding: 10px 10mm;
+      }
+      .invoice-detail {
+          height: 20%;
+      }
+      .payment-detail {
+          position:absolute;
+          width: 30%;
+          height: 25mm;
+          left: 10mm;
+          bottom: 10mm;
+          padding: 15px;
+          border-radius: 15px;
+          border: 1px solid #10547f;
+      }
+      .payment-detail-title {
+        font-size: 12px;
+        font-weight: bold;
+        color: #10547f;
+        margin-bottom: 15px;
+      }
+      .payment-row-caption {
+        display: inline-block;
+        width: 40mm;
+        font-size: 10px;
+        color: #10547f;
+      }
+      .payment-row-value {
+        display: inline-block;
+        width: 40mm;
+        font-size: 10px;
+        color: #10547f;
+      }
+      .payment-row{
+        width: 90mm;
+        height: 7mm;
+      }
+      .border-line {
+          height:1px;
+          margin-left: 10mm;
+          margin-right: 10mm;
+          background-color:#d0dfe7;
+      }
+      .left-invoice-type {
+        width:100%;
+        font-size: 12px;
+        font-weight: bold;
+        float: left;
+        color: #10547f;
+        margin-bottom: 15px;
+      }
+      .left-view {
+        display: inline-block;
+        width: 115mm;
+        font-size: 12px;
+        color: #10547f;
+        flex-direction: column;
+      }
+      .right-view {
+        display: inline-block;
+        width: 85mm;
+        font-size: 12px;
+        color: #10547f;
+        flex-direction: column;
+        vertical-align: top;
+      }
+      .info-row {
+          display: flex;
+          flex-direction: row;
+      }
+      .info-row + .info-row {
+          margin-top: 8px;
+      }
+      .info-row-caption {
+        display: inline-block;
+        width: 100px;
+      }
+      .left-view .info-row .info-row-caption {
+          width: 60px;
+      }
+      .info-row-value {
+        display: inline-block;
+        flex: 1;
+      }
+      .invoice-table {
+          width: 100%;
+          border-collapse: collapse;
+      }
+      .invoice-table td {
+          padding: 2px 5px;
+          vertical-align: top;
+      }
+      .invoice-tr {
+          color: #10547f;
+          text-align: center;
+          font-size: 12px;
+          border-bottom: 1px solid #d0dfe7;
+      }
+      .invoice-tr>td:last-child {
+          text-align: left;
+      }
+      .invoice-table-header{
+          width: 100%;
+          background: #10547f;
+      }
+      .invoice-th-item {
+          background-color: #10547f;
+          color: white;
+          font-size: 10px;
+      }
+      .invoice-sum-row {
+          background: #e7eff3;
+          color: #10547f;
+          font-size: 12px;
+      }
+      .invoice-sum-row>td:first-child {
+          text-align: right;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="page">
+        <div class="title">
+            {{#if isAgency}}
+            TAX INVOICE
+            {{else}}
+            Time Sheet
+            {{/if}}
+        </div>
+        <div class="content">
+            <div class="invoice-from">
+                <div class="left-view">
+                    <div class="left-invoice-type">
+                        {{sender_trading_name}}
+                    </div>
+                    {{#if isAgency}}
+                    <div class="info-row">
+                        <div class="info-row-caption">
+                            Contact:
+                        </div>
+                        <div class="info-row-value">
+                            {{sender_username}}
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-row-caption">
+                            ABN:
+                        </div>
+                        <div class="info-row-value">
+                            {{{sender_abn}}}
+                        </div>
+                    </div>
+                    {{/if}}
+                    <div class="info-row">
+                        <div class="info-row-caption">
+                            Email:
+                        </div>
+                        <div class="info-row-value">
+                            {{{sender_email}}}
+                        </div>
+                    </div>
+                </div>
+                <div class="right-view">
+                    {{#if isAgency}}
+                    <div class="info-row">
+                        <div class="info-row-caption">
+                            Invoice No.:
+                        </div>
+                        <div class="info-row-value">
+                            {{{invoice_no}}}
+                        </div>
+                    </div>
+                    {{/if}}
+                    <div class="info-row">
+                        <div class="info-row-caption">
+                            Date:
+                        </div>
+                        <div class="info-row-value">
+                            {{{invoice_date}}}
+                        </div>
+                    </div>
+                    <!-- <div class="info-row">
+                        <div class="info-row-caption">
+                            Date Due:
+                        </div>
+                        <div class="info-row-value">
+                            {{{due_date}}}
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="border-line"></div>
+            <div class="invoice-to">
+                <div class="left-view">
+                    <div class="info-row">
+                        <div class="info-row-caption">
+                            Bill To:
+                        </div>
+                        <div class="info-row-value">
+                            {{{bill_to}}}
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-row-caption">
+                            Contact:
+                        </div>
+                        <div class="info-row-value">
+                            {{{receiver_name}}}
+                        </div>
+                    </div>
+                    <div class="info-row">
+                        <div class="info-row-caption">
+                            Email:
+                        </div>
+                        <div class="info-row-value">
+                            {{{receiver_email}}}
+                        </div>
+                    </div>
+                </div>
+                <div class="right-view">
+                    <div>
+                        {{#if isAgency}}Invoice{{else}}Time Sheet{{/if}} for
+                    </div>
+                    <div style="font-weight: bold">
+                        {{{invoice_for}}}
+                        {{#if has_purchase_order}}
+                        <br> P.O: {{{purchase_order}}}
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+            <div class="invoice-detail">
+                <table class="invoice-table">
+                    <thead>
+                        <tr class="invoice-table-header">
+                            <th class="invoice-th-item">DATE</th>
+                            <th class="invoice-th-item">DESCRIPTION</th>
+                            <th class="invoice-th-item">WORK TIME</th>
+                            <th class="invoice-th-item">BREAK</th>
+                            <th class="invoice-th-item" />
+                            <th class="invoice-th-item">TOTAL BREAKS</th>
+                            <th class="invoice-th-item">RATE PER HOUR</th>
+                            <th class="invoice-th-item">HOURS</th>
+                            <th class="invoice-th-item">FIXED RATE</th>
+                            <th class="invoice-th-item">TOTAL</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{{table_content}}}
+                        {{#if is_gst_registered}}
+                        <tr class="invoice-sum-row">
+                            <td colspan="9">Invoice Subtotal</td>
+                            <td>{{{invoice_subtotal}}}</td>
+                        </tr>
+                        <tr class="invoice-sum-row">
+                            <td colspan="9">GST</td>
+                            <td>{{{invoice_gst}}}</td>
+                        </tr>
+                        {{/if}}
+                        <tr class="invoice-sum-row">
+                            <td colspan="9">{{#if isAgency}}Total{{else}}Total Hours{{/if}}</td>
+                            <td>{{{invoice_total}}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            {{#if isAgency}}
+            <div class="payment-detail">
+                <div class="payment-detail-title">
+                    Payment Details
+                </div>
+                <div class="payment-row">
+                    <div class="payment-row-caption">
+                        Account Name:
+                    </div>
+                    <div class="payment-row-value">
+                        {{{account_name}}}
+                    </div>
+                </div>
+                <div class="payment-row">
+                    <div class="payment-row-caption">
+                        BSB:
+                    </div>
+                    <div class="payment-row-value">
+                        {{{invoice_bsb}}}
+                    </div>
+                </div>
+                <div class="payment-row">
+                    <div class="payment-row-caption">
+                        ACC:
+                    </div>
+                    <div class="payment-row-value">
+                        {{{invoice_acc}}}
+                    </div>
+                </div>
+            </div>
+            {{/if}}
+        </div>
+    </div>
+  </body>
+</html>

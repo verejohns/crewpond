@@ -1,0 +1,122 @@
+.menu-card {
+    position: absolute !important;
+    border-radius: 10px !important;
+    width: 200px;
+    right: 30px;
+    top: 50px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+    .menu-top-arrow {
+        width: 15px;
+        margin-left: 155px;
+        margin-top: -8px;
+    }
+
+    .menu-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 35px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #a4b7c1;
+            color: #00DD8C;
+            border-left: 2px solid #00DD8C;
+        }
+    
+        &.selected-item {
+            background: #E7EFF2;
+            color: #00DD8C;
+        }
+        .logout {
+            cursor: pointer;
+        }
+    }
+    .divider {
+        width: 80%;
+        height: 1px;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: #C3E2EE;
+    }
+
+}
+
+.menu-card-alt {
+    position: absolute !important;
+    border-radius: 10px !important;
+    max-width: 350px;
+    right: 30px;
+    top: 50px;
+    padding: 15px;
+
+    .help-menu-header {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .help-menu-item span {
+        font-weight: 700;
+    }
+}
+
+.subaccounts-card {
+    position: absolute !important;
+    border-radius: 10px !important;
+    width: 300px;
+    right: 30px;
+    top: 50px;
+    padding-top: 5px;
+    padding-bottom: 10px;
+
+    .menu-top-arrow {
+        width: 15px;
+        margin-left: 155px;
+        margin-top: -8px;
+    }
+
+    .account-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        height: 45px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 5px;
+        cursor: pointer;
+
+        &:hover {
+            background-color: #a4b7c1;
+            color: #00DD8C;
+            border-left: 2px solid #00DD8C;
+        }
+    
+        &.selected-item {
+            background: #E7EFF2;
+            color: #00DD8C;
+        }
+
+        .add-new-action {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+    
+    }
+    .divider {
+        width: 80%;
+        height: 1px;
+        margin-left: 15px;
+        margin-right: 15px;
+        background-color: #C3E2EE;
+    }
+
+}

@@ -1,0 +1,70 @@
+@import "components/variables";
+@import "utilities/borders";
+
+@import "components/newchat";
+@import "components/schedulecollapse";
+@import "components/jobbercollapse";
+@import "components/menu";
+@import "components/profile";
+@import "components/modal-dialog";
+@import "components/security";
+@import "components/support";
+@import "components/paymentmethod";
+@import "components/report";
+@import "components/sidebar";
+@import "components/message-container";
+@import "components/working-hour";
+
+.indicator {
+    margin-right: 12px;
+
+    img {
+      width: 12px;
+    }
+}
+
+.autocomplete-dropdown-container {
+  width: 320px;
+  position: absolute;
+  z-index: 999;
+  padding: 10px;
+  border-radius: 10px;
+  background: white;
+  
+  .suggestion-item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+}
+
+
+.detail-card {
+  width: 50%;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (max-width: 1248px) {
+    width: 60%
+  }
+
+  @media screen and (max-width: 648px) {
+    width: 80%
+  }
+}
+
+.location-search-input {
+  border-radius: 20px !important;
+  border: 1px solid #105580;
+  padding: 5px 20px !important;
+  width: 100%;
+  &:focus {
+    color: $primary !important;
+  }
+}
+
+.gmnoprint {
+  span { 
+    display: none;
+  }
+}

@@ -1,0 +1,43 @@
+
+.search-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 60px;
+    padding: 10px;
+
+    &.hover {
+        background-color: rgb(223, 229, 231);
+    }
+    .avatar {
+        max-width: 40px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &.no-border {
+          border: none;
+          img {
+            border: none;
+          }
+        }
+        img {
+            width: 40px;
+        }
+    }
+
+    .description {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .name {
+            font-size: 20px;
+        }
+
+        .info {
+            font-size: 15px;
+            color: #7A9CB1;
+        }
+    }
+}

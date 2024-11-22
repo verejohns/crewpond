@@ -1,0 +1,912 @@
+// =============================
+// job form card
+// =============================
+.job-form-card {
+  padding: 30px;
+  max-width: 900px;
+  @media screen and (max-width: 768px) {
+    padding: 10px;
+  }
+}
+// =============================
+// job, contract, offer, invite cards
+// =============================
+.job-card, .offer-card, .contract-card, .invite-card, .invoice-card, .invite-request-card {
+  max-width: 960px;
+  margin: auto;
+
+  &.active, &:hover {
+    cursor: pointer;
+    background: linear-gradient(180deg, #FFFFFF, #E1FFF4);
+  }
+  .card-body {
+    display: flex;
+    @media screen and (max-width: 768px) {
+      padding: 10px;
+    }
+
+    .left-wrapper {
+      overflow: hidden;
+      width: 30%;
+      max-width: 100px;
+
+      .avatar {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        border: none;
+        height: 0;
+        border-radius: 0;
+        &.no-border {
+          border: none;
+          img {
+            border: none;
+          }
+        }
+
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: 2px solid $green;
+          border-radius: 20%;
+        }
+      }
+      
+      .badge-count {
+        margin-left: auto;
+        margin-top: -15px;
+        position: relative;
+      }
+    }
+    .right-wrapper {
+      display: flex;
+      flex-direction: column;
+      padding-left: 15px;
+      width: 70%;
+      min-width: calc(100% - 100px);
+      @media screen and (max-width: 768px) {
+        padding-left: 10px;
+      }
+
+      .header {
+        display: flex;
+        align-items: center;
+
+        .action {
+          margin-left: auto;
+          @media screen and (max-width: 1200px) {
+            display: none;
+          }
+
+          img {
+            margin-left: 30px;
+            width: 30px;
+          }
+        }
+      }
+      .title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin: 0;
+        @media screen and (max-width: 768px) {
+          font-size: 100%;
+        }
+      }
+      .poster {
+        display: flex;
+        font-size: 80%;
+        color: $grey-2;
+        @media screen and (max-width: 768px) {
+          font-size: 70%;
+        }
+
+        span:nth-child(2) {
+          display: block;
+          background: $grey-2;
+          margin: 4px 15px 3px 15px;
+          width: 1px;
+        }
+      }
+      .footer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: auto;
+
+        .item {
+          display: flex;
+          align-items: center;
+          margin-right: 20px;
+          color: $green;
+          
+          @media screen and (max-width: 768px) {
+            font-size: 60%;
+            margin-right: 10px;
+          }
+
+          img {
+            width: 15px;
+            margin-right: 5px;
+            @media screen and (max-width: 768px) {
+              width: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// =============================
+// job card
+// =============================
+.job-card {
+  .card-body {
+    .left-wrapper {
+      width: 35%;
+      max-width: 150px;
+    }
+    .right-wrapper {
+      width: 65%;
+      min-width: calc(100% - 150px);
+
+      .header {
+        margin-top: -5px;
+
+        .category {
+          margin-top: -5px;
+        }
+      }
+
+      .title {
+        margin-top: -5px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 80%;
+        }
+      }
+      .description {
+        overflow: hidden;
+        height: 62px;
+        text-align: justify;
+        color: $grey-2;
+        @media screen and (max-width: 768px) {
+          height: 48px;
+        }
+      }
+
+      .footer {
+        margin: 0 !important;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        .row {
+          width: 100%;
+          .posted-by {
+            span {
+              @media screen and (max-width: 768px) {
+                font-size: 70%;
+              }
+              &:first-child {
+                color: $grey-2;;
+                margin-right: 15px;
+              }
+              &:last-child {
+                color: $green;
+                margin-left: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// =============================
+// offer card
+// =============================
+.offer-card {
+  .sent-at {
+    color: $primary;
+    font-size: 90%;
+    margin-left: auto;
+    @media screen and (max-width: 768px) {
+      font-size: 70%;
+    }
+  }
+}
+
+// =============================
+// invoice card
+// =============================
+.invoice-card {
+  .card-body {
+    .content-wrapper {
+      display: flex;
+      width: 100%;
+
+      .avatar {
+        width: 150px;
+        height: 100%;
+        border-radius: 20%;
+
+        &.no-border {
+          border: none;
+
+          img {
+            height: auto;
+          }
+        }
+
+        .badge-count {
+          position: absolute;
+          left: 145px;
+          bottom: 20px;
+        }
+      }
+
+      .invoice-content {
+        display: flex;
+        flex-direction: column;
+
+        &.received-invoice {
+          width: calc(100% - 150px);
+        }
+
+        &.sent-invoice {
+          width: 100%;
+        }
+
+        .content {
+          .title {
+            font-size: 20px;
+            font-weight: 500;
+          }
+          .span {
+            font-size: 15px;
+          }
+
+          .sender-name span, .company span {
+            margin-right: 15px;
+            text-transform: capitalize;
+          }
+        }
+        .footer {
+          margin-top:20px;
+          display: flex;
+          flex-direction: row;
+          .due-date {
+            width: 100%;
+          }
+  
+          .item {
+            display: flex;
+
+            img {
+              margin-right: 3px;
+            }
+          }
+        } 
+      }
+    }
+  }
+}
+
+// =============================
+// offer card
+// =============================
+.contract-card {
+  .started-at {
+    font-size: 90%;
+    @media screen and (max-width: 768px) {
+      font-size: 70%;
+    }
+    margin-top: auto;
+
+    span {
+      &:first-child {
+        color: $grey-2;;
+        margin-right: 15px;
+      }
+      &:last-child {
+        color: $primary;
+      }
+    }
+  }
+  .footer {
+    margin: 0 !important;
+  }
+}
+// =============================
+// invite card
+// =============================
+.invite-card {
+  .action {
+    margin-left: auto;
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+}
+// =============================
+// jobber card
+// =============================
+.jobber-card {
+
+  &.active, &:hover, &.selected {
+    cursor: pointer;
+    background: linear-gradient(180deg, #FFFFFF, #E1FFF4);
+  }
+
+  .card-body-inner {
+    display: flex;
+
+    .left-wrapper {
+      padding: 0 15px;
+
+      .avatar {
+        display: flex;
+        width: 100px;
+        height: 100px;
+        margin: 0;
+        &.no-border {
+          border: none;
+        }
+
+        &.invited {
+          padding: 20px;
+
+          img {
+            object-fit: none;
+          }
+        }
+      }
+    }
+    .right-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      width: calc(100% - 130px);
+
+      .detail {
+        display: flex;
+        flex-direction: column;
+        margin-right: 10px;
+        width: calc(100% - 140px);
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          margin: 0;
+        }
+
+        .name {
+          margin-bottom: auto;
+          overflow: hidden;
+          white-space: nowrap;
+          text-overflow: ellipsis;
+        }
+        .success-rate {
+          opacity: 0.5;
+          margin-top: auto;
+          @media screen and (max-width: 480px) {
+            font-size: 80%;
+          }
+        }
+      }
+      .action {
+        display: flex;
+        flex-direction: column;
+        width: 130px;
+        margin-left: auto;
+        @media screen and (max-width: 480px) {
+          width: 100%;
+          margin-left: 0;
+        }
+
+        .top {
+          display: flex;
+          justify-content: center;
+          span {
+            display: inline-block;
+            width: 25px;
+            cursor: pointer;
+            @media screen and (max-width: 480px) {
+              width: 20px;
+            }
+
+            & + span {
+              margin-left: 10px;
+            }
+          }
+        }
+        .medium {
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+        .bottom {
+          margin-top: auto;
+          span {
+            color: $green;
+            cursor: pointer;
+          }
+          @media screen and (max-width: 480px) {
+            margin-top: 15px;
+          }
+
+          .btn {
+            margin: 0;
+          }
+        }
+      }
+    }
+  }
+}
+// =============================
+// message card
+// =============================
+.message-card {
+  overflow: hidden;
+  height: 85vh;
+  .card-body {
+    display: flex;
+    padding: 0;
+
+    .left-wrapper {
+      flex: 0 380px;
+      width: 380px;
+      border-right: 1px solid #e7eef2;
+      @media screen and (max-width: 768px) {
+        flex: 0 100%;
+        width: 100%;
+        &.selected {
+          display: none;
+        }
+      }
+      .header {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+        border-bottom: 1px solid #e7eef2;
+        border-top-left-radius: 20px;
+
+        input {
+          box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          -o-box-shadow: none;
+        }
+        .input-group-append {
+          cursor: pointer;
+          margin: 10px;
+        }
+        .search-user-room {
+          border-radius: 20px;
+          background: #F4F8FB;
+          .search-input-user {
+            background: #F4F8FB;
+          }
+        }
+      }
+      .body {
+        height: 75vh;
+      }
+      .user-list {
+        .user-row {
+          display: flex;
+          padding: 10px;
+          border-bottom: 1px solid #e7eef2;
+          cursor: pointer;
+
+          &.active, &:hover {
+            background: linear-gradient(0deg, #DBFFEC, #FFFFFF);
+          }
+          .avatar {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            width: 75px;
+            height: 75px;
+            &.no-border {
+              border: none;
+            }
+          }
+          .info {
+            width: 155px;
+
+            .username {
+              font-size: 110%;
+              color: $green;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .last_from {
+              font-weight: 500;
+              font-size: 18px;
+              color: $gray-900;
+            }
+            .last-message {
+              color: $gray-600;
+            }
+          }
+          .action {
+            width: 105px;
+          }
+        }
+      }
+    }
+    .right-wrapper {
+      flex: 1;
+      @media screen and (max-width: 768px) {
+        display: none;
+        &.selected {
+          display: flex;
+          flex: 1;
+        }
+      }
+      .header {
+        border-top-right-radius: 20px;
+
+        .username {
+          font-size: 120%;
+          font-weight: 400;
+        }
+      }
+      .body {
+        display: flex;
+        width: 100%;
+        height: 100vh;
+        flex-direction: column;
+
+        .messages {
+          display: flex;
+          background: rgba(231, 238, 242, 0.43);
+          height: 75vh;
+
+          .scrollbar-container {
+            width: 100%;
+
+            .messages-inner {
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              padding: 0 15px 30px 15px;
+
+              .message {
+                display: flex;
+                flex-direction: column;
+                margin-top: 30px;
+                margin-right: auto;
+                max-width: 60%;
+                padding: 10px 20px;
+                background: $white;
+                border-radius: 20px;
+                box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+                -webkit-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+                -moz-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+                -o-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+
+                &.my-msg {
+                  background: linear-gradient(180deg, #258DB6, #10547F);
+                  color: white;
+                  margin-left: auto;
+                  margin-right: unset;
+                  .message-time {
+                    text-align: right;
+                  }
+                }
+
+                .message-content {
+                  width: 100%;
+                  img {
+                    width: 50%;
+                  }
+                  .call-link {
+                    color: $green;
+                  }
+                }
+                .message-time {
+                  text-align: left;
+                  font-size:10px;
+                  color: #7A9CB1;
+                }
+              }
+              .day-separator {
+                margin-top: 30px;
+                text-align: center;
+                font-size: 120%;
+                opacity: 0.3;
+              }
+            }
+          }
+        }
+        .message-form {
+          display: flex;
+          align-items: center;
+          min-height: 10vh;
+          padding: 15px 25px;
+
+          .action {
+            flex: 0 30px;
+            cursor: pointer;
+          }
+          .text {
+            position: relative;
+            flex: 1;
+            margin: 0 15px;
+            padding: 0 15px;
+          }
+        }
+      }
+    }
+  }
+}
+// =============================
+// filter card
+// =============================
+.filter-card {
+  .categories-wrapper {
+    width: 100%;
+
+    .categories-inner {
+      display: flex;
+      justify-content: space-between;
+      width: max-content;
+      min-width: 100%;
+      padding-bottom: 15px;
+
+      .item {
+        font-size: 80%;
+        padding: 2px 15px;
+        margin: 0 5px;
+        cursor: pointer;
+
+        &.active, &:hover {
+          color: white;
+          background: $green;
+          border-radius: 15px;
+        }
+      }
+    }
+  }
+}
+// =============================
+// user detail card
+// =============================
+.user-detail-card {
+  .archive-container {
+    display: flex;
+    justify-content: flex-end;
+
+    .archive-action {
+      cursor: pointer;
+      color: $green; 
+
+      &.archived {
+        color: $gray-600;
+      }
+    }
+  }
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+    justify-content: center;
+    align-items: center;
+
+    .center-wrapper {
+      display: flex;
+      flex: 1;
+      align-items: center;
+      padding: 10px;
+
+      .avatar {
+        min-width: 80px;
+        height: 80px;
+        border: 2px solid #00dd8c;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-right: 15px;
+        &.no-border {
+          border:0;
+        }
+        img {
+          width: 100%;
+        }
+      }
+      .user-name {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        width: calc(100% - 150px);
+        color: $green;
+
+        .chat-member-status {
+          font-size: 15px;
+          color: $primary;
+        }
+      }
+      .action {
+        margin-left: 20px;
+        width: 30px;
+        height: 30px;
+        img {
+          max-width: 30px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .description, .schedules, .offers {
+    margin-bottom: 30px;
+  }
+  .category-item{
+    display: inline-block;
+    border-radius: 1.25em;
+    padding: 5px 15px 5px 15px;
+    font-size: 15px;
+    border: 1px solid #00DD8C;
+    margin: 5px;
+  }
+  .user-job-rate {
+    display: flex;
+    flex-direction: row;
+    -ms-flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .rate-detail {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+      -ms-flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+      -webkit-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+      -moz-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+      -o-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+      background: linear-gradient(180deg, #258DB6, #10547F);
+      color: white;
+      padding: 10px;
+      border-radius: 1.25em;
+      margin-top: 10px;
+
+      &.rate-completed {
+        margin-right: 5px;
+      }
+      &.rate-success {
+        margin-left: 5px;
+      }
+      .rate-value {
+        font-weight: 600;
+        font-size: 20px;
+      }
+      .rate-description {
+        font-size: 15px;
+      }
+    }
+  }
+  .user-skills {
+    margin-top: 10px;
+  }
+  .user-reviews {
+    margin-top: 10px;
+  }
+  .divder-line {
+    height: 1px;
+    background-color: #10547F44;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .user-detail-title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  .group-members {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 15px;
+
+    .user-detail-title {
+      display: flex;
+      align-items: center;
+      .action {
+        width: 35px;
+        cursor: pointer;
+      }
+    }
+
+    .group-member-avatars {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: center;
+      .member-avatar {
+        span {
+          cursor: pointer;
+          position: absolute;
+          margin-left: 35px;
+        }
+        img {
+          margin-right: 5px;
+          width: 50px;
+          height: 50px;
+          border-radius: 50%;
+          border: 1px solid $green;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+  .group-created-by {
+    margin-bottom: 15px;
+
+    .group-created-user {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: 1px solid $green;
+      }
+      .group-created-username {
+        margin-left: 15px;
+        font-size: 15px;
+        color: $green;
+      }
+    }
+  }
+}
+
+
+// =============================
+// invite request card
+// =============================
+
+.invite-request-card {
+  .card-body{
+    .left-wrapper {
+      .avatar {
+        position: relative;
+        width: 100%;
+        padding-bottom: 100%;
+        border: none;
+        height: 0;
+        border-radius: 50%;
+        &.no-border {
+          border: none;
+        }
+  
+        img {
+          position: absolute;
+          top: 0;
+          left: 0;
+          border: 2px solid $green;
+          border-radius: 50%;
+        }
+      }
+    }
+
+    .right-wrapper {
+      .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+    }
+  }
+}

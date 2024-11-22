@@ -1,0 +1,18 @@
+doctype html
+html(lang="" itemscope itemtype="http://schema.org/Article")
+    head
+        meta(charset='utf-8')
+        meta(name='viewport' content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        title=title
+
+    body(class="header-fixed")
+        div(id='app')
+
+        script.
+            let link = document.createElement('link');
+            link.href = '/static/css/app.admin.css';
+            link.type = 'text/css';
+            link.rel = 'stylesheet';
+            document.getElementsByTagName('head')[0].appendChild(link);
+        script(src='/static/js/app.admin.js')
+        script(src='https://maps.googleapis.com/maps/api/js?key=AIzaSyB1V2HHL_LSdHWsvn-eAKz1PQ1-xpJIk_I&libraries=places')

@@ -1,0 +1,40 @@
+.select-container {
+  .select__control {
+    border-radius: 30px;
+
+    .select__placeholder, .select__single-value {
+      color: $primary;
+    }
+  }
+  &.sm-size {
+    .select__control {
+      width: 120px;
+      height: 28px;
+      min-height: 28px;
+
+      .select__placeholder, .select__single-value {
+        font-size: 13px;
+      }
+      .select__dropdown-indicator {
+        padding: 2px 6px 2px 2px;
+      }
+    }
+    .select__input {
+      display: block !important;
+      height: 16px;
+
+      #react-select-2-input {
+        display: block;
+        height: 16px;
+        font-size: 13px !important;
+      }
+    }
+  }
+
+  &.dark-theme {
+    .select__control {
+      border: none;
+      background-color: #e7eef2;
+    }
+  }
+}

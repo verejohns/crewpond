@@ -1,0 +1,286 @@
+// =============================
+// user detail card
+// =============================
+.user-profile-card {
+    width: 45%;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (max-width: 1325px) {
+      width: 65%;
+    }
+    @media screen and (max-width: 996px) {
+        width: 90%;
+        form {
+          width: 100%;
+          .card {
+            .card-body {
+              .header {
+                .center-wrapper{
+                  .upload-widget {
+                    min-width: 80px;
+                    width: 80px;
+                    height: 80px;
+                  }
+        
+                  .user-info {
+                    margin-left: 5px;
+                    width: 100%;
+                  }
+                }
+              }
+
+              .user-job-rate {
+                margin-left: 0px;
+                margin-right: 0px;
+            
+                .rate-detail {
+                  height: 100px;
+                  &.rate-completed {
+                    margin-right: 3px;
+                  }
+                  &.rate-success {
+                    margin-left: 3px;
+                  }
+                  .rate-value {
+                    font-weight: 500;
+                    font-size: 20px;
+                  }
+                  .rate-description {
+                    font-size: 14px;
+                    margin-left: -5px !important;
+                    margin-right: -5px !important;
+                  }
+                }
+            }
+            }
+            
+          }
+        }
+    }
+
+    .footer {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+    }
+    .header {
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 15px;
+        justify-content: center;
+        align-items: center;
+    
+        .center-wrapper {
+          display: flex;
+          flex: 1;
+          padding: 10px;
+          .action {
+            display: flex;
+            flex-direction: row;
+            align-self: flex-start;
+            img {
+              width: 25px;
+              height: 25px;
+              margin: 5px;
+              cursor: pointer;
+            }
+            @media screen and (max-width: 768px) {
+                display: none;
+            }
+          }
+          .upload-widget {
+            display: flex;
+            min-width: 120px;
+            height: 120px;
+            border: 2px solid #00dd8c;
+            background: #F6FEFB;
+            border-radius: 50%;
+            cursor: pointer;
+            align-items: center;
+            justify-content: center;
+
+            &.no-border {
+              border: 0;
+            }
+            
+            img {
+              width: 100%;
+              height: 100%;
+              border-radius: 50%;
+              object-fit: cover;
+            }
+          }
+          .user-info {
+            margin-left: 90px;
+            width: 88%;
+            @media screen and (max-width: 768px) {
+                width: 65%;
+            }
+            .user-info-item {
+                display: flex;
+                flex-direction: row;
+                font-size: 100%;
+                margin-bottom: 6px;
+
+                .editable-field {
+                  max-width: 250px;
+
+                  @media screen and (max-width: 1440px) {
+                    max-width: 200px;
+                  }
+                }
+
+                @media screen and (max-width: 768px) {
+                  font-size: 85%;
+                }
+            
+                span {
+                  &:first-child {
+                    display: inline-block;
+                    width: 120px;
+                    color: #7A9CB1;
+                    margin-right: 15px;
+                  }
+                  
+                }
+                .static-field{
+                    width: 100% !important;
+                    color: #10547F !important;
+                }
+            }
+
+            
+          }
+        }
+    }
+    .description, .schedules, .offers {
+        margin-bottom: 30px;
+    }
+    .category-item{
+        display: inline-block;
+        border-radius: 1.25em;
+        padding: 5px 15px 5px 15px;
+        font-size: 15px;
+        border: 1px solid #00DD8C;
+        margin: 5px;
+        .remove-skill-icon {
+            color: #00DD8C;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+    }
+    .user-job-rate {
+        display: flex;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 80px;
+        margin-right: 80px;
+    
+        .rate-detail {
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          height: 100px;
+          -ms-flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+          -webkit-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+          -moz-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+          -o-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+          background: linear-gradient(180deg, #258DB6, #10547F);
+          color: white;
+          padding: 10px;
+          border-radius: 1.25em;
+          margin-top: 10px;
+          &.rate-completed {
+            margin-right: 10px;
+          }
+          &.rate-success {
+            margin-left: 10px;
+          }
+          .rate-value {
+            font-weight: 500;
+            font-size: 30px;
+          }
+          .rate-description {
+            font-size: 17px;
+          }
+        }
+    }
+    .user-skills {
+        margin-top: 10px;
+    }
+    .user-reviews {
+        margin-top: 10px;
+    }
+    .divder-line {
+        height: 1px;
+        background-color: #10547F44;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .user-detail-title {
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+
+    .user-detail-content {
+        font-size: 18px;
+        font-weight: 400;
+        margin-bottom: 5px;
+        background-color: #E7EEF2;
+        border-radius: 15px;
+        padding: 10px 15px;
+    }
+
+    .user-description{
+      margin-top: 10px;
+
+      .left-wrapper {
+        width: 40%;
+        max-width: 200px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .left-wrapper-alt {
+        width: 80%;
+        font-size: 20px;
+        font-weight: 500;
+      }
+
+      .right-wrapper {
+        padding-left: 15px;
+        width: 60%;
+        min-width: calc(100% - 200px);
+        display: flex;
+        justify-content: flex-end;
+        align-items: center
+      }
+
+      .right-wrapper-alt {
+        padding-left: 15px;
+        width: 20%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center
+      }
+
+      @media screen and (max-width: 768px) {
+        .left-wrapper {
+          width: 70%;
+          max-width: 200px;
+        }
+  
+        .right-wrapper {
+          width: 30%;
+        }  
+      }
+    }
+}

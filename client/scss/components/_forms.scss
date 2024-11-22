@@ -1,0 +1,101 @@
+.job-form {
+  .header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 15px;
+
+    .upload-widget {
+      margin-bottom: 15px;
+      @media screen and (max-width: 480px) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    .primary-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      width: calc(100% - 150px);
+      margin-bottom: 15px;
+      padding: 10px;
+
+      @media screen and (max-width: 480px) {
+        width: calc(100% - 80px);
+      }
+
+      .info-item {
+        display: flex;
+        min-width: 150px;
+        justify-content: center;
+        margin-bottom: 5px;
+
+        input {
+          box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+          -webkit-box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+          -moz-box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+          -o-box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+        }
+        
+        img {
+          width: 20px;
+          margin-right: 14px;
+          object-fit: contain;
+        }
+        .price {
+          display: block;
+          height: 28px;
+          width: 120px;
+          background: #e7eef2;
+          border-radius: 20px;
+          padding: 4px 12px;
+          font-size: 13px;
+        }
+      }
+    }
+  }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    justify-content: space-between;
+
+    h4 {
+      margin-bottom: 0;
+      margin-right: 25px;
+    }
+  }
+
+  .editable-field {
+    .form-control {
+      background: #e7eef2;
+      border: 0px;
+    }
+  }
+}
+.offer-form {
+  .flex-wrapper {
+    .left-wrapper {
+      max-width: calc(100% - 120px);
+      @media screen and (max-width: 768px) {
+        font-size: 100%;
+        max-width: calc(100% - 100px);
+      }
+    }
+  }
+  .title, .description {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  @media screen and (max-width: 768px) {
+    h5 {
+      font-size: 100%;
+    }
+    .badge + .badge {
+      margin-left: 5px;
+    }
+  }
+}

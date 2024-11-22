@@ -1,0 +1,30 @@
+import { paths } from '../../../../../utils';
+                
+export default {
+    [paths.client.APP_USER_FAQ]: "FAQ",
+    [paths.client.APP_USER_TERMS]: "Terms and Condition",
+    [paths.client.APP_PRICING]: "Pricing",
+    [paths.client.APP_FAQ]: "FAQ",
+    [paths.client.APP_INVITES_REQUEST]: "Jobs",
+    [paths.client.APP_JOBBER_PROFILE]: "Profile",
+    [paths.client.APP_SECURITY]: "Password and Security",
+    // [paths.client.APP_SUB_USERS]: "Teammates",
+    [paths.client.APP_NOTIFICATIONS]: "Notifications",
+    // [paths.client.APP_REPORTS]: "Reports",
+    [paths.client.APP_MESSAGES]: "Chats",
+    [paths.client.APP_PAYMENT_METHOD]: "Payment Method",
+    [paths.client.APP_SUBSCRIPTIONS]: "Subscriptions",
+    [paths.client.APP_OFFERS + "?archive=true"]: "Archived Folder",
+    [paths.client.APP_CONTRACTS + "?archive=true"]: "Archived Folder",
+    [paths.client.APP_MESSAGES + "?archive=true"]: "Archived Folder",
+    [paths.client.APP_INVOICES]: "Invoices",
+    [paths.client.APP_PROFILE]: "My Profile",
+    [paths.client.APP_SCHEDULE]: "My Calendar",
+    [paths.client.APP_INVITES]: "Invites",
+    [paths.client.APP_CONTRACTS]: "Contracts",
+    [paths.client.APP_OFFERS]: "Offers",
+    [paths.client.APP_JOBS]: "Jobs",
+    [paths.client.APP_EDIT_JOB]: "Edit Job",
+    [paths.client.APP_NEW_JOB]: "Offers",
+    [paths.client.APP_BASE]: "Dashboard"
+}

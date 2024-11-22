@@ -1,0 +1,41 @@
+.time-picker {
+    margin-left: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: $primary;
+    border: 0;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    .time-field {
+        width: 100px;
+    }
+    
+    .time-picker-card {
+        z-index: 990;
+        position: absolute;
+        margin-left: -60px;
+        .time-input {
+            display: flex;
+            flex-direction: row;
+
+            input {
+                width: 45%;
+                height: 30px;
+            }
+        }
+        ul {
+            padding-inline-start: 0;
+            -webkit-column-count: 3;
+            -moz-column-count: 3;
+            column-count: 3;
+            li {
+                cursor: pointer;
+                font-size: 15px;
+                list-style-type: none;
+                color: #7A9CB1;
+                margin-left: 10px;
+                margin-right: 10px;
+            }
+        }    
+    }
+}

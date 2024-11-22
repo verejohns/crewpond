@@ -1,0 +1,51 @@
+.editable-field {
+  position: relative;
+
+  .react-datepicker__input-container{
+    display: block;
+    width: 100%;
+  }
+
+  .react-datepicker-wrapper {
+    display: block;
+    width: 100%;
+  }
+  .action {
+    cursor: pointer;
+  }
+
+  &.first-type {
+    .action {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      transform: translateY(-50%);
+    }
+
+    i {
+      font-size: 13px;
+    }
+  }
+  &.second-type {
+    .action img {
+      width: 25px;
+    }
+  }
+
+  &.edit-mode {
+    .show-on-edit {
+      display: block !important;
+    }
+    .hide-on-edit {
+      display: none !important;
+    }
+  }
+  &.read-mode {
+    .show-on-edit {
+      display: none !important;
+    }
+    .hide-on-edit {
+      display: block !important;
+    }
+  }
+}

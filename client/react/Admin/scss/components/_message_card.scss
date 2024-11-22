@@ -1,0 +1,174 @@
+// =============================
+// message card
+// =============================
+.message-card {
+  overflow: hidden;
+
+  .card-body {
+    display: flex;
+    padding: 0;
+
+    .left-wrapper, .right-wrapper {
+      .header {
+        display: flex;
+        height: 70px;
+        align-items: center;
+        justify-content: center;
+        padding: 0 15px;
+        border-bottom: 1px solid #e7eef2;
+      }
+      .body {
+        height: 75vh;
+      }
+    }
+
+    .left-wrapper {
+      flex: 0 300px;
+      width: 300px;
+      border-right: 1px solid #e7eef2;
+
+      .header {
+        border-top-left-radius: 20px;
+
+        input {
+          box-shadow: none;
+          -webkit-box-shadow: none;
+          -moz-box-shadow: none;
+          -o-box-shadow: none;
+        }
+      }
+      .user-list {
+        .user-row {
+          display: flex;
+          padding: 10px;
+          border-bottom: 1px solid #e7eef2;
+          cursor: pointer;
+
+          &.active, &:hover {
+            background: linear-gradient(0deg, #DBFFEC, #FFFFFF);
+          }
+
+          .avatar {
+            width: 75px;
+            height: 75px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+          .info {
+            width: 170px;
+
+            .username {
+              font-size: 110%;
+              color: $green;
+              overflow: hidden;
+              text-overflow: ellipsis;
+              white-space: nowrap;
+            }
+            .rate {
+              display: flex;
+              align-items: center;
+
+              img {
+                width: 15px;
+                margin-right: 5px;
+              }
+            }
+          }
+          .action {
+            width: 18px;
+          }
+        }
+      }
+    }
+
+    .right-wrapper {
+      flex: 1;
+
+      .header {
+        border-top-right-radius: 20px;
+
+        .username {
+          font-size: 120%;
+          font-weight: 400;
+        }
+      }
+      .body {
+        display: flex;
+        flex-direction: column;
+
+        .messages {
+          display: flex;
+          background: rgba(231, 238, 242, 0.43);
+          flex: 1;
+          .scrollbar-container {
+            width: 100%;
+            .messages-inner {
+              position: absolute;
+              display: flex;
+              flex-direction: column;
+              width: 100%;
+              padding: 0 15px 30px 15px;
+
+              .message {
+                margin-top: 30px;
+                padding: 10px 20px;
+                margin-right: auto;
+                max-width: 80%;
+                background: $white;
+                border-radius: 20px;
+                box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+                -webkit-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+                -moz-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+                -o-box-shadow: 5px 6px 12px rgba(0,0,0,0.09);
+                .message-media {
+                  width: 150px;
+                  height: auto;
+                  border-radius: 10px;
+                }
+                &.my-msg {
+                  background: linear-gradient(180deg, #258DB6, #10547F);
+                  color: white;
+                  margin-left: auto;
+                  margin-right: unset;
+                }
+              }
+              .day-separator {
+                margin-top: 30px;
+                text-align: center;
+                font-size: 120%;
+                opacity: 0.3;
+              }
+            }
+          }
+        }
+        .message-form {
+          display: flex;
+          align-items: center;
+          min-height: 70px;
+          padding: 15px 25px;
+
+          .action {
+            flex: 0 30px;
+            cursor: pointer;
+          }
+          .text {
+            position: relative;
+            flex: 1;
+            margin: 0 30px;
+
+            textarea {
+              border-color: $primary;
+              box-shadow: none;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              -o-box-shadow: none;
+              resize: none;
+              overflow: hidden;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.support-dialog {
+    .modal-body {
+        .support-title {
+            background-color: #f3f5f7;
+            font-size: 20px;
+        }
+
+        .support-content {
+            background-color: #FFF;
+            color: #7A9CB1;
+            font-size: 15px;
+
+            a{
+                display: block;
+                padding: .5rem 1rem;
+                margin-left: auto;
+                img {
+                    width: 15px;
+                    height: 15px;
+                }
+            }
+        }
+    }
+}

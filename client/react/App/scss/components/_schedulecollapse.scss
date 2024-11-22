@@ -1,0 +1,108 @@
+.schedule-collapse {
+    border-radius: .5em;
+    background-color: #F7F7F7;
+    margin-top: 20px;
+
+    .schedule-info {
+        display: flex;
+        flex-direction: row;
+        padding-left: 10px;
+        padding-right: 10px;
+        border-radius: .5em;
+        background-color: #E7EFF2;
+        cursor: pointer;
+    }
+
+    .name {
+        display: flex;
+        flex-direction: column;
+
+        .due-date {
+            color: #7A9CB1;
+        }
+    }
+
+    .schedule-collapse-action {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+
+        img {
+            margin-left: 10px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        button {
+            max-height: 32px;
+        }
+    }
+
+    .unassign-but {
+        margin-right: 10px;
+        width: 140px;
+    }
+
+    .jobber-row {
+        display: flex;
+        align-items: center;
+        padding: 5px 10px;
+        border-radius: 14px;
+
+        // &:hover {
+        //     background: linear-gradient(180deg, #FFFFFF, #E1FFF4);
+        //     cursor: pointer;
+        // }
+
+        &.active {
+            background: #E7EEF2;
+            cursor: pointer;
+
+            &:hover {
+                background: linear-gradient(180deg, #E7EEF2, #E1FFF4);
+            }
+        }
+
+        
+        @media screen and (min-width: 768px) {
+            .avatar {
+                width: 60px;
+                height: 60px;
+                &.no-border {
+                    border: none;
+                    img {
+                        border: none;
+                    }
+                }
+            }
+        }
+        .left-wrapper {
+            width: calc(70% - 30px);
+
+            .name {
+                color: #00dd8c;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                @media screen and (max-width: 768px) {
+                    font-size: 80%;
+                }
+            }
+        }
+        .right-wrapper {
+            display: flex;
+            flex-direction: column;
+            max-width: calc(30% - 30px);
+            margin-left: auto;
+            text-align: right;
+
+            @media screen and (max-width: 768px) {
+                button {
+                    width: 100px;
+                }
+            }
+        }
+    }
+}

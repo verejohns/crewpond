@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?><shifts dateRun="201907251511"><shift><rental_point_shift_uid>L1-1</rental_point_shift_uid><jobsheet_no>TEST0100001</jobsheet_no><action>new</action><date_on>20190712</date_on><time_on>0800</time_on><date_off>20190712</date_off><time_off>1400</time_off><client>Test Customer 1</client><resource>AV Technician                                     </resource><resource_description /><technician /><crew_heading /><activity>Setup</activity><showname>Test Show 1</showname><account_manager_id>RP</account_manager_id><account_manager_name>RP</account_manager_name><project_manager_id /><project_manager_name /><location_id>0</location_id><location_name>Main Location</location_name><venue>Mantra at Salt</venue><room>Boardroom 1</room><meeting_place>Bell Street
+Kingscliff
+NSW
+2487</meeting_place><meeting_place_state>NSW</meeting_place_state><venue_line1>Bell Street</venue_line1><venue_line2 /><venue_suburb>Kingscliff</venue_suburb><venue_state>NSW</venue_state><venue_postcode>2487</venue_postcode><client_job_no>PO9876</client_job_no><onsite_contact_name /><onsite_contact_number /><instructions>Installation Instructions Line 1
+Installation Instructions Line 2
+Installation Instructions Line 3
+Installation Instructions Line 4
+</instructions><project_no /></shift><shift><rental_point_shift_uid>L1-2</rental_point_shift_uid><jobsheet_no>TEST0100001</jobsheet_no><action>new</action><date_on>20190712</date_on><time_on>0800</time_on><date_off>20190712</date_off><time_off>1400</time_off><client>Test Customer 1</client><resource>AV Technician                                     </resource><resource_description /><technician /><crew_heading /><activity>Setup</activity><showname>Test Show 1</showname><account_manager_id>RP</account_manager_id><account_manager_name>RP</account_manager_name><project_manager_id /><project_manager_name /><location_id>0</location_id><location_name>Main Location</location_name><venue>Mantra at Salt</venue><room>Boardroom 1</room><meeting_place>Bell Street
+Kingscliff
+NSW
+2487</meeting_place><meeting_place_state>NSW</meeting_place_state><venue_line1>Bell Street</venue_line1><venue_line2 /><venue_suburb>Kingscliff</venue_suburb><venue_state>NSW</venue_state><venue_postcode>2487</venue_postcode><client_job_no>PO9876</client_job_no><onsite_contact_name /><onsite_contact_number /><instructions>Installation Instructions Line 1
+Installation Instructions Line 2
+Installation Instructions Line 3
+Installation Instructions Line 4
+</instructions><project_no /></shift><shift><rental_point_shift_uid>L2-1</rental_point_shift_uid><jobsheet_no>TEST0100001</jobsheet_no><action>new</action><date_on>20190712</date_on><time_on>1500</time_on><date_off>20190712</date_off><time_off>2000</time_off><client>Test Customer 1</client><resource>AV Technician                                     </resource><resource_description /><technician /><crew_heading /><activity>Show</activity><showname>Test Show 1</showname><account_manager_id>RP</account_manager_id><account_manager_name>RP</account_manager_name><project_manager_id /><project_manager_name /><location_id>0</location_id><location_name>Main Location</location_name><venue>Mantra at Salt</venue><room>Boardroom 1</room><meeting_place>Bell Street
+Kingscliff
+NSW
+2487</meeting_place><meeting_place_state>NSW</meeting_place_state><venue_line1>Bell Street</venue_line1><venue_line2 /><venue_suburb>Kingscliff</venue_suburb><venue_state>NSW</venue_state><venue_postcode>2487</venue_postcode><client_job_no>PO9876</client_job_no><onsite_contact_name /><onsite_contact_number /><instructions>Installation Instructions Line 1
+Installation Instructions Line 2
+Installation Instructions Line 3
+Installation Instructions Line 4
+</instructions><project_no /></shift><shift><rental_point_shift_uid>L2-2</rental_point_shift_uid><jobsheet_no>TEST0100001</jobsheet_no><action>new</action><date_on>20190712</date_on><time_on>1500</time_on><date_off>20190712</date_off><time_off>2000</time_off><client>Test Customer 1</client><resource>AV Technician                                     </resource><resource_description /><technician /><crew_heading /><activity>Show</activity><showname>Test Show 1</showname><account_manager_id>RP</account_manager_id><account_manager_name>RP</account_manager_name><project_manager_id /><project_manager_name /><location_id>0</location_id><location_name>Main Location</location_name><venue>Mantra at Salt</venue><room>Boardroom 1</room><meeting_place>Bell Street
+Kingscliff
+NSW
+2487</meeting_place><meeting_place_state>NSW</meeting_place_state><venue_line1>Bell Street</venue_line1><venue_line2 /><venue_suburb>Kingscliff</venue_suburb><venue_state>NSW</venue_state><venue_postcode>2487</venue_postcode><client_job_no>PO9876</client_job_no><onsite_contact_name /><onsite_contact_number /><instructions>Installation Instructions Line 1
+Installation Instructions Line 2
+Installation Instructions Line 3
+Installation Instructions Line 4
+</instructions><project_no /></shift><shift><rental_point_shift_uid>L2-3</rental_point_shift_uid><jobsheet_no>TEST0100001</jobsheet_no><action>new</action><date_on>20190712</date_on><time_on>1500</time_on><date_off>20190712</date_off><time_off>2000</time_off><client>Test Customer 1</client><resource>AV Technician                                     </resource><resource_description /><technician /><crew_heading /><activity>Show</activity><showname>Test Show 1</showname><account_manager_id>RP</account_manager_id><account_manager_name>RP</account_manager_name><project_manager_id /><project_manager_name /><location_id>0</location_id><location_name>Main Location</location_name><venue>Mantra at Salt</venue><room>Boardroom 1</room><meeting_place>Bell Street
+Kingscliff
+NSW
+2487</meeting_place><meeting_place_state>NSW</meeting_place_state><venue_line1>Bell Street</venue_line1><venue_line2 /><venue_suburb>Kingscliff</venue_suburb><venue_state>NSW</venue_state><venue_postcode>2487</venue_postcode><client_job_no>PO9876</client_job_no><onsite_contact_name /><onsite_contact_number /><instructions>Installation Instructions Line 1
+Installation Instructions Line 2
+Installation Instructions Line 3
+Installation Instructions Line 4
+</instructions><project_no /></shift><shift><rental_point_shift_uid>L3-1</rental_point_shift_uid><jobsheet_no>TEST0100001</jobsheet_no><action>new</action><date_on>20190712</date_on><time_on>2030</time_on><date_off>20190712</date_off><time_off>2245</time_off><client>Test Customer 1</client><resource>AV Technician                                     </resource><resource_description /><technician /><crew_heading /><activity>Bump Out</activity><showname>Test Show 1</showname><account_manager_id>RP</account_manager_id><account_manager_name>RP</account_manager_name><project_manager_id /><project_manager_name /><location_id>0</location_id><location_name>Main Location</location_name><venue>Mantra at Salt</venue><room>Boardroom 1</room><meeting_place>Bell Street
+Kingscliff
+NSW
+2487</meeting_place><meeting_place_state>NSW</meeting_place_state><venue_line1>Bell Street</venue_line1><venue_line2 /><venue_suburb>Kingscliff</venue_suburb><venue_state>NSW</venue_state><venue_postcode>2487</venue_postcode><client_job_no>PO9876</client_job_no><onsite_contact_name /><onsite_contact_number /><instructions>Installation Instructions Line 1
+Installation Instructions Line 2
+Installation Instructions Line 3
+Installation Instructions Line 4
+</instructions><project_no /></shift><shift><rental_point_shift_uid>L3-2</rental_point_shift_uid><jobsheet_no>TEST0100001</jobsheet_no><action>new</action><date_on>20190712</date_on><time_on>2030</time_on><date_off>20190712</date_off><time_off>2245</time_off><client>Test Customer 1</client><resource>AV Technician                                     </resource><resource_description /><technician /><crew_heading /><activity>Bump Out</activity><showname>Test Show 1</showname><account_manager_id>RP</account_manager_id><account_manager_name>RP</account_manager_name><project_manager_id /><project_manager_name /><location_id>0</location_id><location_name>Main Location</location_name><venue>Mantra at Salt</venue><room>Boardroom 1</room><meeting_place>Bell Street
+Kingscliff
+NSW
+2487</meeting_place><meeting_place_state>NSW</meeting_place_state><venue_line1>Bell Street</venue_line1><venue_line2 /><venue_suburb>Kingscliff</venue_suburb><venue_state>NSW</venue_state><venue_postcode>2487</venue_postcode><client_job_no>PO9876</client_job_no><onsite_contact_name /><onsite_contact_number /><instructions>Installation Instructions Line 1
+Installation Instructions Line 2
+Installation Instructions Line 3
+Installation Instructions Line 4
+</instructions><project_no /></shift></shifts>

@@ -1,0 +1,25 @@
+.page-content {
+    .card {
+        .text-value{
+            font-size: 20px;
+        }
+        .text-card-title{
+            font-size: 30px;
+        }
+
+        .btn-outline-secondary {
+            width: 100px;
+            margin-right: 10px;
+        }
+
+        .user-job-info {
+            margin-bottom: 10px;
+        }
+
+        .score {
+            i {
+                color: $green
+            }
+        }
+    }
+}

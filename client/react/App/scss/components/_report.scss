@@ -1,0 +1,6 @@
+.report-card {
+    cursor: pointer;
+    &.selected {
+        background: linear-gradient(180deg, #FFFFFF, #E1FFF4);
+    }
+}

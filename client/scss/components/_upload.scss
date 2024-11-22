@@ -1,0 +1,22 @@
+.upload-widget {
+  display: flex;
+  width: 150px;
+  height: 150px;
+  border: 2px solid $green;
+  background: #F6FEFB;
+  border-radius: 30px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  &.no-border {
+    border: 0;
+  }
+}
+.upload-widget img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 30px;
+  height: auto;
+  width: auto;
+  object-fit: cover;
+}

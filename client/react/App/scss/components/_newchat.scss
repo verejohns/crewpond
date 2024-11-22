@@ -1,0 +1,178 @@
+.new-chat-dialog, .sub-user-dialog {
+  @media screen and (max-width: 768px) {
+    max-width: 400px;
+  }
+    .modal-body {
+      height: 500px !important;
+      .modal-title {
+        .action {
+          position: absolute;
+          right: 35px;
+          top: 30px;
+          width: 25px;
+          height: 25px;
+          img {
+              cursor: pointer;
+              width: 25px;
+              height: 25px;
+              padding: 0;
+              box-shadow: none;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              -o-box-shadow: none;
+          }
+        }
+      }
+      .user-list {
+        margin-top: 20px;
+        overflow-y: scroll;
+        max-height: 400px;
+      }
+      .no-user-list{
+        margin-top: 20px;
+        font-size: 20px;
+      }
+        .jobbers-tab {
+            display: inline-block;
+            border: 0px;
+            bottom: -1px;
+            position: relative;
+            list-style: none;
+            padding: 6px 12px;
+            width: 40%;
+            margin-left: 5%;
+            margin-right: 5%;
+            text-align: center;
+            cursor: pointer;
+            color: #7A9CB1;
+        }
+        .selected-jobbers-tab {
+            background: #fff;
+            color: #10547F;
+            border-bottom: 2px solid #00DD8C;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .jobber-row {
+            display: flex;
+            align-items: center;
+            padding: 5px 10px;
+            border-radius: 14px;
+
+            &:hover {
+              background: linear-gradient(180deg, #FFFFFF, #E1FFF4);
+            }
+
+            .avatar {
+              width: 60px;
+              height: 60px;
+              border: 2px solid #00dd8c;
+              border-radius: 50%;
+              overflow: hidden;
+              margin-right: 15px;
+              &.no-border {
+                border: none;
+                img {
+                  border: none;
+                }
+              }
+              &.is-selected {
+                padding: 10px;
+                border: 2px solid #00dd8c ;
+              }
+            }
+
+            @media screen and (max-width: 768px) {
+                .avatar {
+                    width: 50px;
+                    height: 50px;
+                    &.no-border {
+                      border: none;
+                    }
+                }
+            }
+            &.active {
+              background: #E7EEF2;
+            }
+            .left-wrapper {
+              max-width: calc(80% - 30px);
+
+              .name {
+                color: #00dd8c;
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                @media screen and (max-width: 768px) {
+                  font-size: 80%;
+                }
+              }
+
+            }
+            .right-wrapper {
+              display: flex;
+              flex-direction: column;
+              max-width: calc(50% - 30px);
+              margin-left: auto;
+              text-align: right;
+
+              .action {
+                display: flex;
+                flex-direction: row;
+                justify-content: flex-end;
+                height: 20px;
+
+                img {
+                    margin-left: 15px;
+                    width: 20px;
+                    cursor: pointer;
+                }
+              }
+
+              .rate {
+                font-size: 90%;
+                color: #7A9CB1;
+              }
+
+              @media screen and (max-width: 768px) {
+                .action {
+                    height: 15px;
+
+                    img {
+                        margin-left: 15px;
+                        width: 15px;
+                    }
+                }
+
+                .rate {
+                    font-size: 60%;
+                  }
+              }
+
+              .company {
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                margin-bottom: auto;
+              }
+            }
+          }
+    }
+}
+
+.sub-user-dialog {
+  .jobber-list {
+    height: 355px;
+    .list-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      margin-bottom: 10px;
+      .load-more {
+        width: 150px;
+        text-align: center;
+        cursor: pointer;
+        color: #01c57d;
+      }
+    }
+  }
+}

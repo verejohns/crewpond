@@ -1,0 +1,145 @@
+.user-form {
+    
+    .cancel-button {
+        display: inline-block;
+        float: right;
+        margin: 10px;
+    }
+    .save-button {
+        display: inline-block;
+        float: right;
+        margin: 10px;
+    }
+    .profile-view {
+        align-items: center;
+        justify-content: center;
+
+        .profile-content {
+            margin-top: 5px;
+            margin-bottom: 5px;
+        }
+
+        .profile-caption {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+            font-weight: 600;
+            color: $crew-font-gray-color;
+        }
+
+        .profile-value {
+            display: inline;
+            font-size: 15px;
+            font-weight: 600;
+            color: $crew-font-color;
+        }
+
+        .edit-profile-item {
+            display: inline;
+            cursor: pointer;
+        }
+
+        .react-calendar {
+            max-width: none;
+            position: relative;
+            z-index: 1000;
+            border-radius: 10px;
+            box-shadow: 10px 10px 5px #aaaaaa;
+        }
+    }
+
+    .profile-description {
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        color: $crew-font-color;
+
+        .category-item{
+            display: inline-block;
+            border-radius: 1.25em;
+            padding: 5px;
+            font-size: 15px;
+            border: 1px solid #00DD8C;
+            margin: 5px;
+
+            .remove-skill-icon {
+                cursor: pointer;
+                margin-left: 5px;
+                color: #00DD8C;
+            }
+        }
+    }
+
+    .profile-desc-content {
+        margin-top: 5px;
+        font-size: 15px;
+        font-weight: 600;
+        color: $crew-font-color;
+        display: flex;
+        align-items: center;
+    }
+
+    .user-type-select {
+        display: inline-block;
+        width: 250px;
+    }
+
+    .profile-key-type {
+        display: flex;
+        margin-top: 10px;
+        margin-left: 30px;
+        
+        .profile-key-caption {
+            flex: 1;
+            text-align: left;
+        }
+        
+        .key-switch {
+            margin-left: 10px;
+        }
+    }
+
+    .select-skill {
+        margin-top: 5px;
+    }
+
+    .trial-period-item {
+        height: 35px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .info-item {
+        height: 35px;
+        .hide-on-edit {
+            height: 35px;
+            line-height: 35px;
+
+            .static-field {
+                display: block;
+
+                white-space: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                max-width: 200px;
+            }
+        }
+
+        .user-availability {
+            display: flex;
+        }
+    }
+
+
+    .section-header {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        h4 {
+            margin-bottom: 0;
+            margin-right: 25px;
+        }
+    }
+}

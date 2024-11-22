@@ -1,0 +1,468 @@
+.skill-select-dialog, .new-job-dialog, .schedule-dialog, .confirm-dialog,
+.feedback-dialog, .offer-dialog, .invoice-dialog, .add-user-dialog, .map-dialog, .new-chat-dialog {
+    .modal-body {
+        overflow: unset !important;
+
+        .footer {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            align-items: center;
+            button {
+                &:first-child {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.add-user-dialog, .new-chat-dialog {
+    .modal-body {
+        height: 85vh !important;
+        .react-tabs {
+            height: calc(100% - 80px);
+            .react-tabs__tab-panel {
+                height: calc(100% - 60px);
+                overflow: overlay;
+            }
+        }
+
+        .load-more {
+            text-align: center;
+            cursor: pointer;
+            color: $green;
+        }
+
+        form {
+            height: calc(100% - 30px);
+            .scrollbar-container {
+                height: calc(100% - 170px);
+            }
+            .react-tabs {
+                height: calc(100% - 180px);
+                .react-tabs__tab-panel {
+                    height: calc(100% - 60px);
+                    overflow: overlay;
+                    .scrollbar-container {
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.map-dialog {
+    .modal-body {
+        height: 70vh !important;
+
+        .map-container {
+            height: calc(100% - 130px);
+            span {
+                font-size: 20px;
+                color: #b00;
+            }
+        }
+    }
+}
+
+.schedule-dialog {
+    .modal-body {
+
+        .modal-title {
+            .select-all-schedule {
+                color: $green;
+                cursor: pointer;
+            }
+        }
+        .schedule-list {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+}
+
+.confirm-dialog {
+    .modal-body {
+        .modal-description {
+            margin-top: 20px;
+            text-align: center;
+
+            .mainDescription {
+                text-align: left;
+                padding-left: 20px;
+            }
+
+            .subDescription {
+                padding-left: 20px;
+                text-align: left;
+                margin-top: 10px;
+            }
+        }
+
+        .footer {
+            display: flex;
+            justify-content: center;
+        }
+    }
+}
+
+.feedback-dialog {
+    .modal-body {
+        max-height: 105vh !important;
+        form {
+            .contract-close-reason {
+                cursor: pointer;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                span {
+                    color: #00DD8C;
+                }
+            }
+        }
+        .contract-row {
+            display: flex;
+            flex-direction: column;
+
+            .jobber-info {
+                display: flex;
+                flex-direction: row;
+
+                .avatar {
+                    width: 60px;
+                    height: 60px;
+                    &.no-border {
+                        border: none;
+                        img {
+                            border: none;
+                        }
+                    }
+                }
+
+                .left-wrapper {
+                    margin-left: 1rem !important;
+                    max-width: calc(60%);
+                    .due-date, .offer-price {
+                        display: flex;
+                        align-items: center;
+                        height: 30px;
+
+                        img {
+                          width: 15px;
+                          height: 15px;
+                        }
+                        span {
+                          font-size: 80%;
+                          margin-left: 15px;
+                          background: #E7EFF2;
+                          border-radius: 10px;
+                          padding: 0 15px;
+                        }
+                      }
+                }
+                .right-wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    max-width: calc(50% - 30px);
+                    margin-left: auto;
+                    text-align: right;
+                }
+            }
+
+            .schedule-row {
+                display: flex;
+                align-items: flex-start;
+                padding: 10px 0px;
+                border-radius: 14px;
+
+                .schedule-due {
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    margin-left: 1rem !important;
+                    span {
+                        font-size: 15px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.invoice-dialog {
+    .modal-body {
+        form {
+            .worktime {
+                display: flex;
+                align-items: baseline;
+                padding: 5px 0;
+
+                .indicator {
+                margin-right: 12px;
+
+                    img {
+                        width: 12px;
+                    }
+                }
+                .content {
+                    width: calc(100% - 24px);
+
+                    .top, .bottom {
+                        display: flex;
+                        align-items: center;
+                    }
+                    .schedule-action{
+                        margin-left: auto;
+                        span {
+                            font-size: 15px;
+                            color: $green;
+                            margin-left: 10px;
+                            cursor: pointer;
+                        }
+                    }
+                    .name {
+                        max-width: calc(100% - 160px);
+                        overflow: hidden;
+                        white-space: nowrap;
+                        text-overflow: ellipsis;
+
+                        @media screen and (max-width: 768px) {
+                            font-size: 90%;
+                        }
+                    }
+                    .date, .time, .duration {
+                        font-size: 80%;
+                        font-weight: 400;
+                        color: $grey-2;
+                    }
+                    .duration {
+                        margin-left: auto;
+                    }
+                    .name, .date {
+                        margin-right: auto;
+                    }
+                }
+                &.clickable {
+                    cursor: pointer;
+
+                    .content {
+                        width: calc(100% - 50px);
+
+                        .name {
+                        max-width: unset;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.jobber-tab {
+    display: inline-block;
+    border: 0px;
+    bottom: -1px;
+    position: relative;
+    list-style: none;
+    padding: 6px 6px;
+    width: 40%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: center;
+    cursor: pointer;
+    color: #7A9CB1;
+}
+.selected-jobber-tab {
+    background: #fff;
+    color: #10547F;
+    border-bottom: 2px solid #00DD8C;
+    border-radius: 5px 5px 0 0;
+}
+
+.job-info-dialog {
+    .modal-content {
+        border-radius: 15px;
+        .modal-dialog-header {
+            display: flex;
+            justify-content: space-between;
+            background-color: $green;
+            height: 50px;
+            border-top-left-radius: 15px;
+            color: white;
+
+            .job-schedule-date {
+                display: flex;
+                align-items: center;
+                font-weight: 500;
+                padding-left: 20px;
+            }
+
+            .job-header-action {
+                display: flex;
+                align-items: center;
+                width: 30px;
+                margin-right: 20px;
+                img {
+                    cursor: pointer;
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+            .close-action {
+                position: absolute;
+                background-color: #fff;
+                cursor: pointer;
+                z-index: 1000;
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                padding: 7px;
+                right: -10px;
+                margin-top: -10px;
+                box-shadow: 0 5px 10px #aaaaaa;
+                -webkit-box-shadow: 0 5px 10px #aaaaaa;
+                -moz-box-shadow: 0 5px 10px #aaaaaa;
+                -o-box-shadow: 0 5px 10px #aaaaaa;
+            }
+        }
+
+        .modal-body {
+            .schedule-title {
+                display: flex;
+                flex-direction: row;
+                color: #10547F;
+            }
+
+            .border-line {
+                height: 1px;
+                color: #333333;
+                margin: 10px;
+            }
+
+            .jobber-row {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+
+                &:hover {
+                    background: linear-gradient(180deg, #FFFFFF, #E1FFF4);
+                }
+
+                .avatar {
+                    width: 40px;
+                    height: 40px;
+                    border: 2px solid $green;
+                    border-radius: 50%;
+                    overflow: hidden;
+                    margin-right: 15px;
+                    cursor: pointer;
+
+                    &.no-border {
+                        border: none;
+                            img {
+                            border: none;
+                        }
+                    }
+
+                    img {
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+
+                .jobber-description {
+                    .jobber-name {
+                        color: $green;
+                    }
+
+                    .jobber-company {
+                        color: #10547F;
+                    }
+                }
+
+                .action {
+                    display: flex;
+                    flex-direction: row;
+                    height: 25px;
+
+                    img {
+                        cursor: pointer;
+                        width: 25px;
+                    }
+                }
+            }
+
+            .job-info {
+                .job-title {
+                    color: $green;
+                    font-size: 20px;
+                }
+
+                .job-content{
+                    display: flex;
+                    flex-direction: row;
+                    .label {
+                        font-size: 18px;
+                        width: 30%;
+                    }
+
+                    .description {
+                        margin-left: 10px;
+                        font-size: 18px;
+                        width: 70%;
+                        overflow-wrap: break-word;
+                    }
+                }
+            }
+
+            .job-address {
+                display: flex;
+                flex-direction: row;
+                font-size: 18px;
+                font-weight: 500;
+                img {
+                    width: 12px;
+                    margin-right: 10px;
+                }
+            }
+
+            .footer {
+                display: flex;
+                justify-content: center;
+                button {
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+.feed-dialog {
+    .modal-content {
+        .modal-body {
+            display: flex;
+
+            input {
+                border: 0;
+                width: 100%;
+                margin-right: 20px;
+                &:focus {
+                    border: 0 !important;
+                }
+                &:focus-visible {
+                    border: 0 !important;;
+                }
+            }
+
+            span {
+                margin-left: auto;
+                cursor: pointer;
+            }
+        }
+    }
+}
